@@ -16,11 +16,8 @@ html{
 body{
   margin: 0;
   
-  /* background:linear-gradient(to bottom right, rgb(11, 0, 160), rgb(217, 0, 255)); */
   background:linear-gradient(to bottom right, #764BA2, #667EEA);
-  /* background:linear-gradient(to bottom right, #000000, #130F40); */
-  /* background-color: rgb(27, 27, 27); */
-  /* min-height: 900px; */
+  /* background: #1f1f1f; */
   font-size: 16px;
   font-family: 'Libre Franklin', sans-serif;
 }

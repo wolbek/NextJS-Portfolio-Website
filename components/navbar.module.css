@@ -47,7 +47,7 @@
     }
 }
 
-@media (max-width:510px){
+@media (max-width:640px){
     .navbar{
         display: none;
     }
@@ -65,7 +65,8 @@
     color: white;
 }
 
-.link:hover{
+
+.link:hover, .active{
     color: var(--secondary-color);
     /* background-color: aqua; */
 }

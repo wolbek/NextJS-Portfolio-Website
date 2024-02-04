@@ -1,0 +1,26 @@
+.main{
+    width: 35%;
+    padding: 2rem;
+    min-width: 450px;
+    /* height: 200px; */
+    border-radius: 10px;
+    background: rgba(0,0,0,.6);
+    margin: 10px auto;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+
+.main span{
+    font-weight: 900;
+    color: rgb(0, 255, 234);
+    text-transform: capitalize;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
