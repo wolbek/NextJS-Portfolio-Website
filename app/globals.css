@@ -21,3 +21,14 @@ body{
   font-size: 16px;
   font-family: 'Libre Franklin', sans-serif;
 }
+
+.not-found{
+  color:white;
+  min-height:94vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
