@@ -1,95 +1,55 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import classes from './page.module.css';
+import Link from 'next/link';
+import selfPhoto from '@/public/selfPhoto.png';
+import Image from 'next/image';
+import Button from '@/components/button';
+import Card from '@/components/aboutCard';
+import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import FolderSpecialIcon from '@mui/icons-material/FolderSpecial';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <header className={classes.header}>
+
+        <div className={classes.headerLeftPanel}>
+
+          <div>
+            <h3>Hello!</h3>
+            <h1>I'm Aakash Vishwakarma</h1>
+            <p>I have an experience in backend as well as in frontend. I have made several projects.</p>
+          </div>
+
+          <div>
+            <Link href='#aboutme'><Button text="About Me"/></Link>
+            <Link href='https://drive.google.com/file/d/194WG_njeu3v82Tk9jVlhvxbTfRA35xCJ/view?usp=sharing'><Button text="Download Resume"/></Link>
+          </div>
+
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <div className={classes.headerRightPanel}>
+          <Image src={selfPhoto} />
+        </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      </header>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <main>
+        
+        <div className={classes['about-div']} id="aboutme">
+          <h1>About Me!</h1>
+          <p>Driven, accomplished engineering graduate with a passion for continuous learning and staying ahead of the technological curve. Equipped with exceptional determination, unwavering sincerity, and laser-like focus, I have successfully completed my engineering degree with outstanding academic scores. Seeking exciting opportunities to apply my knowledge and skills in a dynamic environment. Let's shape the future together!
+Looking for various opportunities!</p>
+          <div className={classes['about-card-collection']}>
+            
+            <Card heading="Experience" content="1+ Internships" icon={<WorkspacePremiumIcon fontSize='large' color='primary'/>}/>
+            <Card heading="Projects" content="4+ Projects" icon={<FolderSpecialIcon fontSize='large' color='primary'/>}/>
+            <Card heading="Certifications" content="4+ Certifications" icon={<PeopleAltIcon fontSize='large' color='primary'/>}/>
+          </div>
+          
+        </div>
+      </main>
+      
+    </>
   );
 }

@@ -1,0 +1,18 @@
+
+
+.certification-collection{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1%;
+}
+
+.certificationDiv h1{
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
