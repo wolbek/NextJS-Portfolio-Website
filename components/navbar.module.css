@@ -31,24 +31,23 @@
 }
 
 .navbarRightSide{
-    width: 40%;
+    width: 30%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: right;
     align-items: center;
     align-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
-@media (max-width:1010px){
+@media (max-width:925px){
     .navbarRightSide{
-        width: 80%;
-        
+        width: 60%;
     }
 }
 
-@media (max-width:750px){
+@media (max-width:510px){
     .navbar{
         display: none;
     }

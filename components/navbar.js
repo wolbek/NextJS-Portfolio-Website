@@ -15,7 +15,6 @@ export default function NavBar(){
                 <Link href='/api' className={classes.link}><div>API</div></Link>
                 <Link href='/experience' className={classes.link}><div>Experience</div></Link>
                 <Link href='/projects' className={classes.link}><div>Projects</div></Link>
-                <Link href='/certifications' className={classes.link}><div>Certifications</div></Link>
             </div>
         </div>
         <div className={classes.burger}>
