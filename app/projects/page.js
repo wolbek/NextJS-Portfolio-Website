@@ -24,7 +24,7 @@ export default function ProjectPage(){
             technologies: "Java, OOPS, Swing, AWT."
         }
     ]
-    // console.log(experience[0]);
+    
     return (
         <div className={classes.projectDiv}>
             <h1>Projects</h1>

@@ -18,7 +18,7 @@ export default function ExperiencePage(){
             technologies: "yfinance API, AJAX, Chart.js and Mircosoft Azure."
         }
     ]
-    // console.log(experience[0]);
+    
     return (
         <div className={classes.experienceDiv}>
             <h1>Experience</h1>
