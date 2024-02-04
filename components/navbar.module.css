@@ -41,13 +41,19 @@
     gap: 1.5rem;
 }
 
-@media (max-width:925px){
+@media (max-width:1330px){
     .navbarRightSide{
         width: 60%;
     }
 }
 
-@media (max-width:640px){
+@media (max-width:710px){
+    .navbarRightSide{
+        width: 80%;
+    }
+}
+
+@media (max-width:690px){
     .navbar{
         display: none;
     }
